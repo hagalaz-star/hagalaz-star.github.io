@@ -1,0 +1,188 @@
+/* 전체 페이지 스타일 */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+}
+
+/* 시계 스타일 */
+#clock {
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+/* 로그인 폼 스타일 */
+#login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 350px;
+}
+
+#login-form h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+  transition: background 0.3s;
+}
+
+#login-form input[type="text"]:focus,
+#login-form input[type="password"]:focus {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#login-form input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#login-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* 투두리스트 컨테이너 스타일 */
+#todo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  color: #fff;
+}
+
+#todo-container form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#todo-container input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+  transition: background 0.3s;
+}
+
+#todo-container input[type="text"]:focus {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#todo-container button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+#todo-container button:hover {
+  background-color: #0056b3;
+}
+
+#todo-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#todo-container ul li {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#todo-container ul li.completed {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+#todo-container ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#logout-button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff0000;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+#logout-button:hover {
+  background-color: #b30000;
+}
+/* 날씨 정보 스타일 */
+#weather {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.weather-city {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.weather-status {
+  font-size: 1em;
+}
+
+.weather-temp {
+  font-size: 1.5em;
+  font-weight: bold;
+}

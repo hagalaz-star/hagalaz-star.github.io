@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and To-Do List</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div>
+      <h2 id="clock"></h2>
+    </div>
+    <form id="login-form" class="push">
+      <h2>Login</h2>
+      <input
+        type="text"
+        id="username"
+        required
+        placeholder="Your ID"
+        maxlength="20"
+      />
+      <br />
+      <input
+        type="password"
+        id="password"
+        required
+        placeholder="Your Password"
+      />
+      <input type="submit" value="Log In" />
+    </form>
+    <div id="todo-container" style="display: none">
+      <form id="todo-form">
+        <input type="text" id="todo-input" required placeholder="New task" />
+        <button type="button" id="add-button">Add</button>
+      </form>
+      <ul id="todo-list"></ul>
+      <button type="button" id="logout-button">Logout</button>
+    </div>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="js/clock.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/wheather.js"></script>
+    <script src="js/background.js"></script>
+  </body>
+</html>
